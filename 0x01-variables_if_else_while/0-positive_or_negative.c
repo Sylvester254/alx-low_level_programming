@@ -3,8 +3,8 @@
 #include <stdio.h>
 /* more headers goes there */
 /* betty style doc for function main goes there */
+/* main - function returns the random value */
 int main(void)
-/* The main function returns the random value */
 {
 int n;
 
