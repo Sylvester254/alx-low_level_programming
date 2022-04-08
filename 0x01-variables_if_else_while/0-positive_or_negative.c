@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /* more headers goes there */
-/*printf function displays the output*/
+/*The main function returns the random value and if its positive, negative or zero*/
 /* betty style doc for function main goes there */
 int main(void)
 {
