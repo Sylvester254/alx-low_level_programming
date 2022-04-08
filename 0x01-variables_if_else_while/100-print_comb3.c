@@ -32,5 +32,5 @@ int main(void)
 		j = '0';
 		i++;
 	}
-	return (0);
+return (0);
 }
