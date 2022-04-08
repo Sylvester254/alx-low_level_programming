@@ -2,9 +2,9 @@
 #include <time.h>
 #include <stdio.h>
 /* more headers goes there */
-/* The main function returns the random value */
 /* betty style doc for function main goes there */
 int main(void)
+/* The main function returns the random value */
 {
 int n;
 
