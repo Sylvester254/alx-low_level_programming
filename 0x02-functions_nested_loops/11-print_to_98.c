@@ -1,9 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_to_98 - prints all 
- * natural numbers from n to 98
- * Return: void
+ *print_to_98 - prints all
+ *natural numbers from n to 98
+ *Return: void
  */
 void print_to_98(int n)
 {
@@ -21,6 +21,6 @@ void print_to_98(int n)
 		{
 			printf("%d, ", n);
 		}
-		printf("%d\n", 98);
+	printf("%d\n", 98);
 	}
 }
