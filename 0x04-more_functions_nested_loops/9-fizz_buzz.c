@@ -2,7 +2,7 @@
 /**
  * main - function prints numbers  0-100.
  * printf - function gives output values.
- * return: Always 0.
+ * Return: Always 0.
  */
 int main(void)
 {
