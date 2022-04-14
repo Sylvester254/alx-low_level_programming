@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * main - check the code
  *
@@ -6,25 +7,34 @@
  */
 int main(void)
 {
-    print_most_numbers();
+    more_numbers();
     return (0);
 }
 #include "main.h"
 /**
- * print_most_numbers - function outputs numbers from 0-9.
- * _putchar - function displays the values followed by a newline.
+ * more_numbers - function that outputs 10 times the numbers from 0-14
+ * _putchar - function that prints the values
+ * return null
  */
-void print_most_numbers(void)
+void more_numbers(void)
 {
-char c;
-for (c = '0';c <= '9';c++)
+int i = 0;
+int j = 0;
+while (i < 10)
 {
-if (!(c == '2' || c == '4'))
+while (j < 14)
 {
-_putchar (c);
+if (j >= 14)
+{
+_putchar (j / 10 + '0');
+_putchar (j % 10 + '0');
 }
+j++;
 }
 _putchar ('\n');
+j = 0;
+i++;
+}
 }
 #include <unistd.h>
 /**
