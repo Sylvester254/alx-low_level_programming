@@ -7,26 +7,40 @@
  */
 int main(void)
 {
-    print_line(0);
-    print_line(2);
-    print_line(10);
-    print_line(-4);
+    print_square(2);
+    print_square(10);
+    print_square(0);
     return (0);
 }
 #include "main.h"
 /**
- * print_line - function to draw a straight line.
- * @n: number of times _ should be printed.
- * _putchar - function to print
+ * 
+ * 
  */
-void print_line(int n)
+void print_square(int size)
 {
 int i;
+int j;
+if (size > 0)
+{
+for ( i = 0; i < size; i++)
+{
+    for ( j = 1; j < size; j++)
+    {
+        _putchar ('#');
+    
+    }
+    
+    _putchar ('#');
+    _putchar ('\n');
 
-	if (n > 0)
-		for (i = 0; i < n; i++)
-			_putchar('_');
-	_putchar('\n');
+}
+
+}
+else
+{
+_putchar ('\n');
+}
 }
 #include <unistd.h>
 /**
