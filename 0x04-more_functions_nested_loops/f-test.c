@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
  * main - check the code
  *
@@ -8,17 +6,35 @@
  */
 int main(void)
 {
-    printf("%d\n", mul(98, 1024));
-    printf("%d\n", mul(-402, 4096));
+    print_most_numbers();
     return (0);
 }
+#include "main.h"
 /**
- * mul - multiplies a and b
- * @a: 1st value
- * @b: 2nd value
+ * print_most_numbers - function outputs numbers from 0-9.
+ * _putchar - function displays the values followed by a newline.
  */
-int mul(int a, int b)
+void print_most_numbers(void)
 {
-int res = a * b;
-return(res);
+char c;
+for (c = '0';c <= '9';c++)
+{
+if (!(c == '2' || c == '4'))
+{
+_putchar (c);
+}
+}
+_putchar ('\n');
+}
+#include <unistd.h>
+/**
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
 }
