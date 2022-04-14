@@ -7,34 +7,26 @@
  */
 int main(void)
 {
-    more_numbers();
+    print_line(0);
+    print_line(2);
+    print_line(10);
+    print_line(-4);
     return (0);
 }
 #include "main.h"
 /**
- * more_numbers - function that outputs 10 times the numbers from 0-14
- * _putchar - function that prints the values
- * return null
+ * print_line - function to draw a straight line.
+ * @n: number of times _ should be printed.
+ * _putchar - function to print
  */
-void more_numbers(void)
+void print_line(int n)
 {
-int i = 0;
-int j = 0;
-while (i < 10)
+n = 0;
+while (n < n)
 {
-while (j < 14)
-{
-if (j >= 14)
-{
-_putchar (j / 10 + '0');
-_putchar (j % 10 + '0');
-}
-j++;
+_putchar ('_');
 }
 _putchar ('\n');
-j = 0;
-i++;
-}
 }
 #include <unistd.h>
 /**
