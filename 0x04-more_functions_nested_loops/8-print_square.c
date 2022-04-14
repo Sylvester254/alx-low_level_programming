@@ -4,7 +4,7 @@
  * @size: the size of the square.
  * _putchar - function to print # and newline.
  */
-void print_ square(int size)
+void print_square(int size)
 {
 int i;
 int j;
