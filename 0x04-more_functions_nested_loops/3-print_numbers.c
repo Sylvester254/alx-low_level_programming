@@ -3,7 +3,7 @@
  * print_numbers - function that prints the numbers, from 0 to 9
  * _putchar - prints the values
  */
-void print_numbers(void)
+void print _numbers(void)
 {
 int i;
 for (i = 0; i <= 9; i++)
