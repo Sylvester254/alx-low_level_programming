@@ -4,8 +4,8 @@
  * @a: 1st value
  * @b: 2nd value
  */
-int mul(int a, int b)
+int mu l(int a, int b)
 {
-  int res = a * b;
-  return (res);
+int res = a * b;
+return (res);
 }
