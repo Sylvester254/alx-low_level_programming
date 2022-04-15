@@ -4,7 +4,7 @@
  * _putchar - function to print.
  * @size: the size of the triangle
  */
-void print_ triangle(int size)
+void print_triangle(int size)
 {
 int i;
 int j;
