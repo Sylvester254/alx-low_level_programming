@@ -7,35 +7,39 @@
  */
 int main(void)
 {
-    print_square(2);
-    print_square(10);
-    print_square(0);
+    //print_triangle(2);
+    print_triangle(10);
+    //print_triangle(1);
+    //print_triangle(0);
     return (0);
 }
 #include "main.h"
 /**
- * 
- * 
+ * print_triangle - function that prints a triangle.
+ * _putchar - function to print.
+ * @size: the size of the triangle
  */
-void print_square(int size)
+void print_triangle(int size)
 {
 int i;
 int j;
 if (size > 0)
 {
-for ( i = 0; i < size; i++)
+for (i = 1; i <= size; i++)
 {
-    for ( j = 1; j < size; j++)
+for (j = size; j >= 1; j--)
+{
+    if (j > i)
     {
-        _putchar ('#');
-    
+        _putchar (' ');
     }
-    
-    _putchar ('#');
-    _putchar ('\n');
-
+    else
+    {
+         _putchar ('#');
+    }
 }
-
+_putchar ('\n');
+}
 }
 else
 {
