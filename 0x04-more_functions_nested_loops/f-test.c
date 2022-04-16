@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
  * main - check the code
  *
@@ -8,25 +6,47 @@
  */
 int main(void)
 {
-    char c;
-
-    c = '9';
-    printf("%c: %d\n", c, _isdigit(c));
-    c = 'a';
-    printf("%c: %d\n", c, _isdigit(c));
+    more_numbers();
     return (0);
 }
 #include "main.h"
 /**
- * _isdigit - function checks for a digit
- * @c: character to be checked.
- * Return: 1 if the character is a digit.
- * Return: 0 if the character is not a digit.
+ * more_numbers - function that outputs 10 times the numbers from 0-14
+ * _putchar - function that prints the values
  */
-int _isdigit(int c)
+void more_numbers(void)
 {
-if (c >= '0' && c <= '9')
-return (1);
+int i = 0;
+int j = 0;
+while (i < 10)
+{
+while (j <= 14)
+{
+if (j > 9)
+{
+_putchar (j / 10 + '0');
+_putchar (j % 10 + '0');
+}
 else
-return (0);
+{
+    _putchar(j + '0');
+}
+j++;
+}
+_putchar ('\n');
+j = 0;
+  i++;
+}
+}
+#include <unistd.h>
+/**
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
 }
