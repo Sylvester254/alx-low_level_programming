@@ -1,38 +1,18 @@
 #include <stdio.h>
-
-long int func1(long int n)
-
-{
-
-    if (n == 1)
-
-    {
-
-        return(0);
-    }
-
-    int num = 2;
-
-    while (n % num != 0)
-
-        num++;
-
-    printf("%d\n", num);
-
-    func1(n / num);
-}
-
+/**
+ * main - Prints out the larget prime factor of 612852475143
+ * Return:return 0 with success.
+ */
 int main(void)
 {
+	long i;
+	long num = 612852475143;
 
-    long int a;
-    int s;
-
-    a = 612852475143;
-
-    s = func1(a);
-
-    printf("%d", s);
-
-    return 0;
+	for (i = 2; i < num; i++)
+	{
+		if (num % i == 0)
+			num /= i;
+	}
+	printf("%li\n", num);
+	return (0);
 }
