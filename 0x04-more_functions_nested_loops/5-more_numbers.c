@@ -2,7 +2,7 @@
 /**
  * more_numbers - function that outputs 10 times the numbers from 0-14
  * _putchar - function that prints the values
- * Return: null.
+ * Return: void.
  */
 void more_numbers(void)
 {
