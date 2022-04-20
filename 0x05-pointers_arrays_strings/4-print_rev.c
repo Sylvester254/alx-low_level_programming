@@ -5,22 +5,22 @@
  * @s: input string to print.
  * Return: nothing
  */
-void print_ rev(char *s)
+void print_rev(char *s)
 {
 	{
-	int count = 0;
+	int i = 0;
 
 	while (*s != '\0')
 	{
 		s++;
-		count++;
+		i++;
 	}
 
-	while (count > 0)
+	while (i > 0)
 	{
 		s--;
 		_putchar(*s);
-		count--;
+		i--;
 	}
 	_putchar('\n');
 }
