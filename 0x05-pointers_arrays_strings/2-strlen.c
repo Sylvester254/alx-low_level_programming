@@ -6,7 +6,7 @@
  * @s: a string
  * Return: integer value.
  */
-int _strlen(char *s)
+int _strl en(char *s)
 {
 int i;
 
