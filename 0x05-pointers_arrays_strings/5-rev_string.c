@@ -5,7 +5,7 @@
  * @s: input string to print.
  * Return: nothing
  */
-void rev_st ring(char *s)
+void rev_string(char *s)
 {
 	char *t = s;
 	char n[1000];
