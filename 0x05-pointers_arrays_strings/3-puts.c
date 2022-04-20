@@ -4,7 +4,7 @@
  * _puts - function that prints a string
  * @str: string to be printed
  */
-void _puts(char *str)
+void _p uts(char *str)
 {
 int puts(const char *str);
 puts(str);
