@@ -6,7 +6,7 @@
  * @n: n
  */
 
-void print_ array(int *a, int n)
+void print_array(int *a, int n)
 {
 	short c = 0;
 
