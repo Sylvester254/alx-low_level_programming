@@ -6,7 +6,7 @@
  * @n: no of bytes of src
  * Return: pointer to the result string
  */
-char *_strncat(char *dest, char *src, int n)
+char *_str ncat(char *dest, char *src, int n)
 {
 int i, j;
 i = 0;
