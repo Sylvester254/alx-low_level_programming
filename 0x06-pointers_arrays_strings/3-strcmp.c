@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * strcmp - compares two strings ending at the first different char.
+ * _strcmp - compares two strings ending at the first different char.
  * @s1: string to be compared
  * @s2: string to compare
  * Return: the difference between the first character that are not the same.
