@@ -4,7 +4,7 @@
  * @str: string to be changed
  * Return: string
  */
-char *string_toupper(char *str)
+char *string_toupp er(char *str)
 {
 int index = 0;
 while (str[index])
