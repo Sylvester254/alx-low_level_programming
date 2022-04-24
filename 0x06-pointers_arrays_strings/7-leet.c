@@ -4,7 +4,7 @@
  * @s: pointer to input string.
  * Return: Returns pointer to leetspeek string.
  */
-char *lee t(char *s)
+char *leet(char *s)
 {
 int i, j;
 char subs[] = "aAeEoOtTlL";
