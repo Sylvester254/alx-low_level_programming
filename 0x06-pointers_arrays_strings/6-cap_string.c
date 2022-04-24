@@ -7,7 +7,7 @@
  * Return: A pointer to the changed string.
  */
 
-char *cap_s tring(char *s)
+char *cap_string(char *s)
 {
 int i, j;
 char sep[] = " \t\n,;.!?\"(){}";
