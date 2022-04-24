@@ -10,15 +10,16 @@
 char *cap_string(char *s)
 {
 int i, j;
-char delimeters[] = " \t\n,;.!?\"(){}";
-for (i = 0; s[i] != '\0'; i++)
+char sep[] = " \t\n,;.!?\"(){}";
+i = 1;
+if (s[0] >= 'a' && s[0] <= 'z')
+s[0] -= ('a' - 'A');
+while (s[i] != '\0')
 {
-if (s[0] >= 97 && s[0] <= 122)
-s[0] = s[0] - 32;
-for (j = 0; delimeters[j] && s[i + 1] >= 97 && s[i + 1] <= 122)
-{
-s[i + 1] = s[i + 1] - 32;
-}
+for (j = 0; sep[j] != '\0'; j++)
+if (s[i - 1] == sep[j] && (s[i] >= 'a' && s[i] <= 'z'))
+s[i] -= ('a' - 'A');
+i++;
 }
 return (s);
 }
