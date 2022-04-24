@@ -5,7 +5,7 @@
  * @dest: pointer to the destination string
  * Return: pointer to the result string
  */
-char *_ strcat(char *dest, char *src)
+char *_strcat(char *dest, char *src)
 {
 int i, j;
 i = 0;
