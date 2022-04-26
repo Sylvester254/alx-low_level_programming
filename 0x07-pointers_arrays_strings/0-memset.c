@@ -3,7 +3,7 @@
  * _memset - fills memory with a constant byte.
  *
  * @s: pointer for memory to be filled
- * @b: value to be filled
+ * @b: constant value to be filled
  * @n: number of bytes to be filled
  * Return: s
  */
