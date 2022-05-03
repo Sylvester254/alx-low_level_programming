@@ -2,8 +2,8 @@
 /**
  * _atoi - null
  *
- * @s: 
- * Return: int 
+ * @s:null
+ * Return: int
  */
 int _atoi(char *s)
 {
