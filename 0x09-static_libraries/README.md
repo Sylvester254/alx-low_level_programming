@@ -1,0 +1,2 @@
+C - Static libraries.
+Static Linking and Static Libraries is the result of the linker making copy of all used library functions to the executable file.Examples; .a files in Linux and .lib files in Windows. 
