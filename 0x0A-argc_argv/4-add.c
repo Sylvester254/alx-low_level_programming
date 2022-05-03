@@ -1,26 +1,41 @@
 #include <stdio.h>
+#include <ctype.h>
 #include <stdlib.h>
+#include <string.h>
 /**
- * main - prints sum of positive no. in args.
+ * check - checks for valid input
  * @argc: argument count
+ * @i: counter for argv[]
+ * @j: counter for argv[][]
  * @argv: argument vector
- * Return:0
+ * Return: 0 on success, 1 on failure
+ */
+int check(int argc, int i, unsigned int j, char *argv[])
+{
+	for (i = 1; i <= argc; i++)
+		for (j = 0; argv[i] != '\0' && j < strlen(argv[i]); j++)
+			if (isdigit(argv[i][j]) == 0)
+				return (1);
+	return (0);
+}
+/**
+ * main - adds all arguments together if they are digits.
+ * @argc: argument count only accepts ints separated by spaces.
+ * @argv: argument vector
+ * Return: 0 on success, 1 on failure
  */
 int main(int argc, char *argv[])
 {
-int i;
-int s = 0;
-if (argc > 1)
-{
-for (i = 1; i < argc; i++)
-{
-s += atoi(argv[i]);
-printf("%d\n", s);
-}
-return (0);
-}
-else
-{
-printf("0\n");
-}
+	int s, i;
+
+	s = 0;
+	if (check(argc, 1, 0, argv) == 1)
+	{
+		printf("Error\n");
+		return (1);
+	}
+	for (i = 1; i < argc; i++)
+		s += atoi(argv[i]);
+	printf("%d\n", s);
+	return (0);
 }
