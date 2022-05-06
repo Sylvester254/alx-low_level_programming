@@ -7,18 +7,29 @@
  */
 char *_strdup(char *str)
 {
-int i;
-if (str != NULL)
-{
-for  (i = 0; str[i] != '\0'; i++)
-{
-str = malloc(sizeof(char) * i);
-}
-return (str);
-}
-else
+char *s;
+unsigned int i, j;
+if (str == NULL)
 {
 return (NULL);
 }
-free(str);
+for  (i = 0; str[i] != '\0'; i++)
+    ;
+i++;
+if (i < 1)
+{
+return (NULL);
+}
+s = malloc(sizeof(char) * i);
+if (s == NULL)
+{
+free(s);
+return (NULL);
+}
+for (j = 0; j < i; j++)
+{
+s[j] = str[j];
+s[j] = '\0';
+}
+return (s);
 }
