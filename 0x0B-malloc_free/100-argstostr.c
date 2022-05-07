@@ -40,6 +40,5 @@ s[bufferlen] = '\n';
 bufferlen++;
 }
 }
-s[bufferlen];
 return (s);
 }
