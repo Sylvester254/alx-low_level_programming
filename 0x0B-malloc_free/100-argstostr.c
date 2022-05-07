@@ -26,7 +26,7 @@ for (j = 0; av[i][j]; j++)
 len++;
 }
 }
-s = malloc(sizeof(char) * len + ac + 1);
+s = (char *)malloc(sizeof(char) * len + ac + 1);
 if (s == NULL)
 {
 return (NULL);
@@ -36,9 +36,9 @@ for (i = 0; av[i]; i++)
 for (j = 0; av[i][j]; j++, bufferlen++)
 {
 s[bufferlen] = av[i][j];
+}
 s[bufferlen] = '\n';
 bufferlen++;
-}
 }
 s[bufferlen] = '\0';
 return (s);
