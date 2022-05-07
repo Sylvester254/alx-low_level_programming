@@ -40,5 +40,6 @@ s[bufferlen] = '\n';
 bufferlen++;
 }
 }
+s[bufferlen] = '\0';
 return (s);
 }
