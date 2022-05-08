@@ -8,33 +8,33 @@
  */
 int _strncmp(char *s1, char *s2, unsigned int b)
 {
-	unsigned int i;
-	for (i = 0; i <= b && *s1 == *s2 && *s1 != '\0' && *s2 != '\0'; i++)
-	{
-		s1++;
-		s2++;
-	}
-	return (i - b);
+unsigned int i;
+
+for (i = 0; i <= b && *s1 == *s2 && *s1 != '\0' && *s2 != '\0'; i++)
+{
+s1++;
+s2++;
+}
+return (i - b);
 }
 #include <stddef.h>
 /**
  * _strstr -  locates a substring.
- * 
+ *
  * @haystack: the main C string to be scanned.
  * @needle:small string to be searched with-in haystack string.
  * Return: haystack
  */
 char *_strstr(char *haystack, char *needle)
 {
-    int i;
-    while (needle[i] != '\0')
-        i++;
-    while (*haystack != '\0')
-    {
-        if (_strncmp(haystack, needle, i) == 0)
-            return (haystack);
-        haystack++;
-    }
-    return (NULL);
-
+int i;
+while (needle[i] != '\0')
+i++;
+while (*haystack != '\0')
+{
+if (_strncmp(haystack, needle, i) == 0)
+return (haystack);
+haystack++;
+}
+return (NULL);
 }
