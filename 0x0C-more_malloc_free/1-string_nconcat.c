@@ -25,7 +25,10 @@ for (i1 = 0; s1[i1]; i1++)
 ;
 for (i2 = 0; s2[i2]; i2++)
 ;
-i2 > n ? (i2 = n) : (n = i2);
+if (i2 > n)
+{
+i2 = n;
+}
 size = i1 + i2 + 1;
 s = malloc(sizeof(char) * size);
 if (s == NULL)
