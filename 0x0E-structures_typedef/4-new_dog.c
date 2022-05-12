@@ -1,0 +1,39 @@
+#include "dog.h"
+#include <stdlib.h>
+/**
+ * new_dog - creates new dog
+ *
+ * @name: dog's name
+ * @age: dog's age
+ * @owner: dog's owner
+ * Return: NULL
+ */
+dog_t *new_dog(char *name, float age, char *owner)
+{
+int nlen, olen, i;
+	dog_t *bruno;
+
+	nlen = olen = 0;
+	while (name[nlen++])
+		;
+	while (owner[olen++])
+		;
+	bruno = malloc(sizeof(dog_t));
+	if (bruno == NULL)
+		return (NULL);
+
+	bruno->name = malloc(nlen * sizeof(bruno->name));
+	if (bruno == NULL)
+		return (NULL);
+	for (i = 0; i < nlen; i++)
+		bruno->name[i] = name[i];
+
+	bruno->age = age;
+
+	bruno->owner = malloc(olen * sizeof(bruno->owner));
+	if (bruno == NULL)
+		return (NULL);
+	for (i = 0; i < olen; i++)
+		bruno->owner[i] = owner[i];
+	return (bruno);
+}
