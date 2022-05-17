@@ -12,11 +12,11 @@ void p_string(va_list a);
 /**
  * struct printAll - structure definition
  * @type: type
- * @printer: function to print
+ * @b: function to print
  */
 typedef struct printAll
 {
 char *type;
-void (*printer)(va_list);
+void (*b)(va_list);
 } printAll;
 #endif
