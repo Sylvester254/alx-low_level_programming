@@ -49,7 +49,7 @@ va_list ap;
 unsigned int i, j;
 i = j = 0;
 char *s = "";
-printAll printType[] = {
+printType type[] = {
 { "c", p_char },
 { "i", p_int },
 { "f", p_float },
@@ -62,10 +62,10 @@ while (format && format[i])
 j = 0;
 while (j < 4)
 {
-if (*printType[j].type == format[i])
+if (*type[j].type == format[i])
 {
 printf("%s", s);
-printType[j].b(ap);
+type[j].b(ap);
 s = ", ";
 }
 j++;
