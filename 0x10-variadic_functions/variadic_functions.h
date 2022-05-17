@@ -17,6 +17,6 @@ void p_string(va_list a);
 typedef struct printAll
 {
 char *type;
-void (*b)(va_list);
-} printAll;
+void (*b)();
+} printType;
 #endif
