@@ -59,6 +59,7 @@ printAll printType[] = {
 va_start(ap, format);
 while (format && format[i])
 {
+j = 0;
 while (j < 4)
 {
 if (*printType[j].type == format[i])
@@ -72,4 +73,17 @@ j++;
 i++;
 }
 printf("\n");
+}
+
+#include "variadic_functions.h"
+
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+    print_all("ceis", 'B', 3, "stSchool");
+    return (0);
 }
