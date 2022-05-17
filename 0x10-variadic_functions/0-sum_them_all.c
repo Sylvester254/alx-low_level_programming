@@ -5,13 +5,12 @@
  * sum_them_all - finds sum of all its parameters.
  *
  * @n: number of input variables
- * @...: all input parameters
  * Return: sum
  */
 int sum_them_all(const unsigned int n, ...)
 {
 va_list num;
-int i, sum;
+unsigned int i, sum;
 if (n == 0)
 {
 return (0);
