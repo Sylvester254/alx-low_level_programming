@@ -4,20 +4,20 @@
 /**
  * p_char - prints characters
  *
- * @a: arguments
+ * @c: arguments
  */
-void p_char(va_list a)
+void p_char(va_list c)
 {
-printf("%c", va_arg(a, int));
+printf("%c", va_arg(c, int));
 }
 /**
  * p_int - print integers
  *
  * @a: arguments
  */
-void p_int(va_list a)
+void p_int(va_list i)
 {
-printf("%d", va_arg(a, int));
+printf("%d", va_arg(i, int));
 }
 /**
  * p_float - prints float values
@@ -33,9 +33,9 @@ printf("%f", va_arg(a, double));
  *
  * @a: arguments
  */
-void p_string(va_list a)
+void p_string(va_list p)
 {
-char *st = va_arg(a, char *);
+char *st = va_arg(p, char *);
 st == NULL ? printf("(nil)") : printf("%s", st);
 }
 /**
