@@ -18,7 +18,7 @@ if (new == NULL)
 return (NULL);
 }
 d = strdup(str);
-if (d == NULL)
+if (str == NULL)
 {
 free(new);
 return (NULL);
