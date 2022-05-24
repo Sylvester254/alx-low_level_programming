@@ -10,10 +10,10 @@ size_t list_len(const list_t *h)
 {
 size_t el;
 while (h)
-	{
-		el++;
-		h = h->next;
-	}
-
-	return (el);
+{
+printf("[%d] %s\n", h->len, h->str);
+el++;
+h = h->next;
+}
+return (el);
 }
