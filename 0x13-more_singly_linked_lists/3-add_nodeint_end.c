@@ -4,7 +4,7 @@
  *
  * @head: current position in the list
  * @n: int to add to the list
- * Return: listint_t* 
+ * Return: listint_t*
  */
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {

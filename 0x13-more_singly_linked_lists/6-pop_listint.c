@@ -3,13 +3,13 @@
  * pop_listint - deletes the head node of a listint_t linked list
  *
  * @head: first node
- * Return: int 
+ * Return: int
  */
 int pop_listint(listint_t **head)
 {
 int i;
 listint_t *c, *a;
-if (head ==NULL)
+if (head == NULL)
 {
 return (0);
 }

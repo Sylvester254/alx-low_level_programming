@@ -3,7 +3,7 @@
  * listint_len - gets the number of nodes in a list
  *
  * @h: singly linked list
- * Return: size_t 
+ * Return: size_t
  */
 size_t listint_len(const listint_t *h)
 {
