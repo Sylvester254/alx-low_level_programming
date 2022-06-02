@@ -24,6 +24,6 @@ if (o == -1 || a == -1)
 {
 return (-1);
 }
-close(0);
-return (0);
+close(o);
+return (1);
 }
