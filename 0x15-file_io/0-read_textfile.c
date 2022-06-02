@@ -14,6 +14,11 @@ if (filename == NULL)
 {
 return (0);
 }
+buf = malloc(sizeof(char) * letters);
+if (buf == NULL)
+{
+return (0);
+}
 o = open(filename, O_RDONLY);
 r = read(o, buf, letters);
 w = write(STDOUT_FILENO, buf, r);
