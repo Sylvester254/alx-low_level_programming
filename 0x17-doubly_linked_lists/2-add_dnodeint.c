@@ -14,7 +14,7 @@ if (new == NULL)
 {
 return (NULL);
 }
-new->n;
+new->n = n;
 new->prev = NULL;
 new->next = *head;
 if (*head != NULL)
