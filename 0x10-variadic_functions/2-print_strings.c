@@ -16,7 +16,7 @@ va_start(st, n);
 for (i = 0; i < n; i++)
 {
 c = va_arg(st, char*);
-if (c != NULL)
+if (*c)
 {
 printf("%s", c);
 }
