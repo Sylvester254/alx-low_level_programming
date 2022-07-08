@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * get_dnodeint_at_index - function that returns the nth node of a dlistint_t linked list.
+ * get_dnodeint_at_index - returns the nth node of a dlistint_t list.
  *
  * @head: head of dlistint_t list
  * @index: node to locate
@@ -12,7 +12,7 @@ for (; index != 0; index--)
 {
 if (head == NULL)
 {
-    return (NULL);
+return (NULL);
 }
 head = head->next;
 }
