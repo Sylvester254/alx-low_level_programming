@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * add_dnodeint - function that adds a new node at the beginning of a dlistint_t list.
+ * add_dnodeint - adds a new node at the beginning of a dlistint_t list.
  *
  * @head: pointer to the head of dlistint_t list
  * @n: int for new node
@@ -19,7 +19,7 @@ new->prev = NULL;
 new->next = *head;
 if (*head != NULL)
 {
-    (*head)->prev = new;
+(*head)->prev = new;
 }
 *head = new;
 return (new);
