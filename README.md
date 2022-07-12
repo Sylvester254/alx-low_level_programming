@@ -1,7 +1,7 @@
-# ALX LOW LEVEL PROGRAMMING
-<p align="center">
+<h1 align="center"> ALX LOW LEVEL PROGRAMMING </h1>
+<p>
 
- <h1>C PROGRAMMING.</h1>
+ <h2>C PROGRAMMING.</h2>
  <br>
   <img src="code.png"/>
 
@@ -57,3 +57,5 @@
 21. [0x15-file_io](./0x15-file_io)
 22. [0x17-doubly_linked_lists](./0x17-doubly_linked_lists)
 23. [0x18-dynamic_libraries](./0x18-dynamic_libraries)
+## Authors:
+- Sylvester254
