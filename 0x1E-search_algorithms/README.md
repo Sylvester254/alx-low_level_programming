@@ -2,10 +2,10 @@
 ## Resources
 - [Search Algorithms](https://en.wikipedia.org/wiki/Search_algorithm)
 - [Space Complexity](https://www.geeksforgeeks.org/g-fact-86/)
-- []()
-- []()
+- [Linear Search](https://en.wikipedia.org/wiki/Linear_search)
+- [Binary Search](https://en.wikipedia.org/wiki/Binary_search_algorithm)
 
-# Requirements
+## Requirements
 - Allowed editors: ```vi```, ```vim```, ```emacs```
 - All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
 - All your files should end with a new line
